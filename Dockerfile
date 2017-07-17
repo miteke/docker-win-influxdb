@@ -13,5 +13,7 @@ RUN setx /M PATH $($Env:PATH + ';' + $Env:ProgramFiles + '/influxdb')
 
 EXPOSE 8086
 
+VOLUME c:\influxdbdata
+
 CMD ["influxd.exe"]
 
